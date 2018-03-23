@@ -3,7 +3,7 @@ var weather = require("weather-js");
 var UserSearch = function (name, location) {
   this.name = name;
   this.location = location;
-  thids.date = Date.now(); // Look at the documentation for the date object. Or use Moment. Moment requires an npm!
+  this.date = Date.now(); // Look at the documentation for the date object. Or use Moment. Moment requires an npm!
 
   this.getWeather = function () {
 
@@ -16,8 +16,9 @@ var UserSearch = function (name, location) {
   };
 };
 
-var testSearch = new UserSearch("name", "location");
+var testSearch = new UserSearch("Taddes", "Toronto");
 console.log(testSearch);
+
 // testSearch.getWeather(); - This is going to happen in one of our other modules.
 
 module.exports = UserSearch;
