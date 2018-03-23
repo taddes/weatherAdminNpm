@@ -16,8 +16,9 @@ var UserSearch = function (name, location) {
   };
 };
 
-var testSearch = new UserSearch("name", "location");
+var testSearch = new UserSearch("Taddes", "Toronto");
 console.log(testSearch);
+
 // testSearch.getWeather(); - This is going to happen in one of our other modules.
 
 module.exports = UserSearch;
